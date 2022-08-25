@@ -1,0 +1,735 @@
+/* Sass */
+$mainColor : #A01F1F;
+$mainTransition : all .3s ease-in-out;
+$mainBackgroundColor : #F8F8F8;
+/* Sass */
+
+.home{
+
+    .homeContent{
+
+        .topHeaderWrapper{
+            width: 100%;
+            height: 340px;
+            background-image: url('../imgs/banner.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            .overlay{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgba(0,0,0,.3);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .topHeaderWrapperContent{
+                    width: 90%;
+                    margin: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .topHeaderLogo{
+                        text-align: center;
+                        color: #fff;
+                        img{
+                            width: 120px;
+                            height: 120px;
+                            border-radius: 50%;
+                            border: 5px solid #fff;
+                        }
+                        .logoTitle{
+                            font-weight: 600;
+                            font-size: 25px;
+                            margin: 7px 0px 12px 0px;
+                        }
+                        .logoRating{
+                            font-size: 13px;
+                            font-weight: 300;
+                        }
+                        .rating{
+                            position: relative;
+                            text-align: center;
+                            color: #FF9C00;
+                            margin-top: 5px;
+                        }
+                    }
+
+                    .topHeaderInfo{
+                        padding: 30px 80px 10px 40px;
+                        background-color: #fff;
+                        box-shadow: 0px 0px 7px #000;
+
+                        ul{
+                            list-style: none;
+
+                            li{
+                                margin-bottom: 15px;
+                                font-size: 14px;
+                            }
+
+                            .topHeaderSocialIcons{
+                                margin-top: 25px;
+                                ul{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    li{
+                                        margin-right: 15px;
+
+                                        span{
+                                            font-size: 20px;
+                                        }
+                                    }
+
+                                    li:first-child{
+                                        color: #3B59A2;
+                                    }
+
+                                    li:nth-child(2){
+                                        color: #BD081C;
+                                    }
+
+                                    li:nth-child(3){
+                                        color: #BD081C;
+                                    }
+
+                                    li:nth-child(4){
+                                        color: #3B59A2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .homeMainContent{
+            width: 90%;
+            margin: 45px auto 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .homeMainContentLeft{
+                background-color: #fff;
+            }
+            .mainContentLeft{
+                flex: 0 0 20%;
+
+                .accordion{
+                    margin-bottom: 30px;
+
+                    .accordionWrapper{
+                        background-color: $mainBackgroundColor;
+                    }
+                    .accordionTitle{
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+
+                    .accordionDeatails{
+                        background-color: $mainBackgroundColor;
+                        padding: 0px 16px 16px;
+
+                        ul{
+                            list-style-type: disc;
+                            list-style-position: inside;
+                            li{
+                                font-size: 14px;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mainContentRight{
+                flex: 0 0 70%;
+                
+
+                .homeCardsContainer{
+
+                    .cardNav{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: $mainBackgroundColor;
+                        padding: 15px;
+                        box-shadow: 0px 0px 5px 2px rgba(167, 167, 167, 0.223);
+
+                        .cardNavLinks{
+                            ul{
+                                display: flex;
+                                flex-wrap: wrap;
+                                list-style: none;
+                                align-items: center;
+
+                                li{
+                                    margin-right: 25px;
+                                    text-transform: capitalize;
+                                    cursor: pointer;
+                                    font-size: 16px;
+                                    font-weight: 500;
+
+                                    span, svg{
+                                        transition: $mainTransition;
+                                        &:hover{
+                                            color: $mainColor;
+                                        }
+                                    }
+
+                                    svg{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .cardNavControl{
+
+                            ul{
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                list-style: none;
+
+                                li{
+                                    margin-left: 20px;
+                                }
+
+                                li:first-child{
+                                    input{
+                                        padding: 8px 12px;
+                                        outline: none;
+                                        height: 40px;
+                                        border: solid 1px #eee;
+                                        background-color: #fff;
+                                    }
+
+                                    button{
+                                        padding: 11.5px 12px;
+                                        border: none;
+                                        color: #fff;
+                                        background-color: $mainColor;
+                                    }
+
+                                }
+
+                                
+                                select{
+                                    padding: 11px 30px 11px 8px;  
+                                    border: solid 1px #eee;
+                                    background-color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    .cardContainer{
+                        margin-top: 30px;
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 25% 25% 25% 25%;
+                        grid-template-rows: auto auto auto;
+                        gap: 20px;
+
+                        .card{
+                            position: relative;
+                            width: 100%;
+
+                            .mediaIcon{
+                                width: fit-content;
+                                cursor: pointer;
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                z-index: 5555;
+                                font-size: 20px;
+                                color: #555;
+                            }
+                            .cardContent{
+                                text-align: center;
+                                text-transform: capitalize;
+
+                                .cardMainTitle{
+                                    transition:  $mainTransition;
+                                    font-size: 16px;
+                                    &:hover{
+                                        color: $mainColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .ContentNav{
+                flex: 0 0 100%;
+                margin-left: auto;
+            }
+        }
+    }
+
+    .footerWrapper{
+        margin-top: 40px;
+        background-color: $mainBackgroundColor;
+        border: 1px solid #eee;
+        color: #555;
+
+        .footerContent{
+            padding-top: 80px;
+            padding-bottom: 40px;
+
+            .footerContentWrapper{
+                width: 90%;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .ft1{
+
+                    > ul{
+                        list-style: none;
+    
+                        li:first-child{
+                            margin-bottom: 30px;
+                            font-size: 22px;
+                            font-weight: bold;
+                            color: #000;
+                        }
+    
+                        li{
+                            margin-bottom: 15px;
+                            font-size: 14px;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .footerSocialLinks {
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        li{
+                            font-size: 16px !important;
+                            margin-right: 15px;
+                            margin-bottom: 0px !important;
+                        }
+                    }
+
+                    .newsLetterController{
+
+                        input{
+                            padding: 8.8px 12px 8px 12px;
+                            border: none;
+                        }
+
+                        button{
+                            padding: 8px 12px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: $mainColor;
+                            color:  $mainBackgroundColor;
+                            letter-spacing: 1.7px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .footerCopyRightsWrapper{
+        padding: 10px 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .copyRights{
+            font-size: 13px;
+        }
+
+        .copyRightLinks{
+
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                list-style: none;
+                font-size: 14px;
+
+                li{
+                    margin-left: 15px;
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    cursor: pointer;
+                    color: #555;
+                    transition: $mainTransition;
+
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:200px) and (max-width:350px){
+    .home .homeContent .homeMainContent .mainContentRight .homeCardsContainer .cardNav .cardNavLinks ul{
+        padding: 0px !important;
+    }
+
+    .home .homeContent .homeMainContent .mainContentRight .homeCardsContainer .cardNav .cardNavLinks ul li{
+        margin-right: 5px;
+    }
+}
+
+@media(min-width:200px) and (max-width:769px){
+    .home{
+
+        .homeContent{
+
+            .topHeaderWrapper{
+                height: 490px;
+
+                .overlay{
+
+                    .topHeaderWrapperContent{
+                        width: 95%;
+                        justify-content: center;
+                        padding: 20px 0px;
+
+                        .topHeaderLogo{
+                            flex: 0 0 100%;
+                            margin-bottom: 15px;
+
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+
+                            .logoTitle{
+                                font-size: 22px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .homeMainContent{
+                margin: 35px auto 20px auto;
+                width: 95%;
+                justify-content: center;
+
+                .mainContentRight{
+                    flex: 0 0 100%;
+
+                    .homeCardsContainer{
+
+                        .cardNav{
+                            padding: 10px !important;
+                            justify-content: center;
+
+                            .cardNavLinks{
+                                flex: 0 0 100%;
+                                text-align: center;
+                                margin-bottom: 25px;
+
+                                ul{
+                                    justify-content: space-between;
+                                    padding: 0px 20px;
+                                }
+                            }
+
+                            .cardNavControl{
+                                flex: 0 0 100%;
+
+                                ul{
+                                    justify-content: center;
+
+                                    li{
+                                        margin-left: 0px;
+                                        flex: 0 0 100%;
+                                        margin-bottom: 15px;
+                                        text-align: center;
+
+                                        input{
+                                            width: 70%;
+                                        }
+
+                                        button{
+                                            width: 30%;
+                                        }
+
+                                        select{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .cardContainer{
+                            grid-template-columns: 100%;
+                        }
+                    }
+                }
+                
+
+                .mainContentLeft{
+                    flex: 0 0 100%;
+
+                    .accordion{
+                        margin-bottom: 20px;
+                    }
+                }
+
+            }
+
+            
+        }
+
+        .footerWrapper{
+            
+            .footerContent{
+                padding-top: 60px;
+
+                .footerContentWrapper{
+                    width: 93%;
+                    justify-content: flex-start;
+
+                    .ft1{
+                        flex: 0 0 100%;
+                        margin-bottom: 45px;
+
+                        .newsLetterController{
+
+                            input{
+                                padding: 8.8px 9px;
+                            }
+
+                            button{
+                                padding: 7px 9px;
+                                letter-spacing: 1.3px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .footerCopyRightsWrapper{
+            justify-content: center;
+
+            .copyRights{
+                margin-bottom: 15px;
+                font-size: 15px;
+            }
+
+            .copyRightLinks{
+
+                ul{
+                    justify-content: center;
+
+                    li:first-child, li:nth-child(2){
+
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:450px) and (max-width:769px){
+    .home{
+
+        .homeContent{
+
+            .homeMainContent{
+
+                .mainContentRight{
+
+                    .homeCardsContainer{
+
+                        .cardContainer{
+                            grid-template-columns: 50% 50%;
+                        }
+                    }
+                }
+                
+            }
+
+            
+        }
+    }
+}
+
+@media(min-width:769.8px) and (max-width:1050px){
+    .home{
+
+        .homeContent{
+
+            .homeMainContent{
+                width: 95%;
+
+                .ContentNav{
+                    flex: 0 0 100% !important;
+                }
+
+                .mainContentLeft{
+                    flex: 0 0 30%;
+                }
+                .mainContentRight{
+                    flex: 0 0 65%;
+                    .homeCardsContainer{
+
+                        .cardNav{
+
+                            .cardNavControl{
+
+                                ul{
+
+                                    li{
+                                        margin-left: 0px;
+                                    }
+
+                                    li:last-child{
+                                        margin-left: 8px;
+                                    }
+                                }
+                            }
+                        }
+                        .cardContainer{
+                            grid-template-columns: 50% 50%;
+                            gap: 10px;
+                        }
+                    }
+                }
+                
+            }
+
+            
+        }
+
+        .footerWrapper{
+            
+            .footerContent{
+                padding-top: 60px;
+
+                .footerContentWrapper{
+                    width: 93%;
+                    justify-content: flex-start;
+
+                    .ft1{
+                        flex: 0 0 50%;
+                        margin-bottom: 25px;
+
+                        // .newsLetterController{
+
+                        //     input{
+                        //         padding: 8.8px 9px;
+                        //     }
+
+                        //     button{
+                        //         padding: 7px 9px;
+                        //         letter-spacing: 1.3px;
+                        //     }
+
+                        // }
+                    }
+                }
+            }
+        }
+
+        // .footerCopyRightsWrapper{
+        //     justify-content: center;
+
+        //     .copyRights{
+        //         margin-bottom: 15px;
+        //         font-size: 15px;
+        //     }
+
+        //     .copyRightLinks{
+
+        //         ul{
+        //             justify-content: center;
+
+        //             li:first-child, li:nth-child(2){
+
+        //                 margin-bottom: 10px;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+
+@media(min-width:1050px) and (max-width:1320px){
+    .home{
+
+        .homeContent{
+
+            .homeMainContent{
+                width: 95%;
+
+                .ContentNav{
+                    flex: 0 0 100% !important;
+                }
+
+                .mainContentLeft{
+                    flex: 0 0 25%;
+                }
+                .mainContentRight{
+                    flex: 0 0 70%;
+                    .homeCardsContainer{
+
+                        .cardNav{
+
+                            .cardNavControl{
+
+                                ul{
+
+                                    li{
+                                        margin-left: 0px;
+                                    }
+
+                                    li:last-child{
+                                        margin-left: 8px;
+                                    }
+                                }
+                            }
+                        }
+                        .cardContainer{
+                            grid-template-columns: 32% 32% 32%;
+                            gap: 10px;
+                        }
+                    }
+                }
+                
+            }
+
+            
+        }
+    }
+}

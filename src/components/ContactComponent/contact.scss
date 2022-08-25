@@ -1,0 +1,362 @@
+/* Sass */
+$mainColor : #A01F1F;
+$mainTransition : all .3s ease-in-out;
+$mainBackgroundColor : #F8F8F8;
+/* Sass */
+
+.contact {
+    padding: 8px 15px;
+    .contactWrapper{
+        border: 1px solid #ddd;
+        .contactTitle{
+            color : #555;
+            padding: 10px 25px;
+            font-weight: 500;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            text-transform: capitalize;
+        }
+
+        .contactInfo{
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+            padding: 20px;
+            margin: auto;
+            margin-top: 20px;
+
+            .leftPart{
+                flex: 0 0 40%;
+                text-align: center;
+                border-right: 1px solid #ddd;
+
+                img{
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+
+                p.contactName{
+                    font-size: 18px;
+                    margin: 10px 0px;
+                    font-weight: 500;
+                }
+
+                span.contactPosition{
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: block;
+                    margin: 3px 0px 8px;
+                }
+
+                button{
+                    color: #0986FD;
+                    background-color: transparent;
+                    cursor: pointer;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    margin: auto;
+                    font-size: 14px;
+
+                    svg{
+                        font-size: 18px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .rightPart{
+                flex: 0 0 50%;
+                margin-left: 40px;
+
+                table{
+                    border-collapse: separate;
+                    border-spacing: 20px 10px;
+                    text-transform: capitalize;
+
+                    tr{
+                        td:first-child{
+                            text-align: right;
+                            margin-right: 8px;
+                            font-weight: 500;
+                            color: rgb(178, 178, 178);
+                            font-size: 14px;
+                        }
+
+                        td:last-child{
+                            text-align: left;
+                            font-size: 14px;
+                            color: #555;
+                        }
+                    }
+                }
+
+                .rightBtn{
+                    margin-top: 35px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 90%;
+                    margin-left: auto;
+
+                    button{
+                        margin-right: 25px;
+                        border-radius: 25px;
+                        padding: 8px 25px;
+                        display: inline-flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        border: 1px solid transparent;
+                        background-color: transparent;
+                        cursor: pointer;
+                    }
+
+                    button:first-child{
+                        background-color: $mainColor;
+                        color: #fff;
+                        transition:  $mainTransition;
+
+                        &:hover{
+                            background-color: transparent;
+                            color: $mainColor;
+                            border: 1px solid $mainColor;
+                        }
+                    }
+
+                    button:last-child{
+                        background-color: transparent;
+                        border: 1px solid $mainColor;
+                        color: $mainColor;
+                        transition: $mainTransition;
+
+                        &:hover{
+                            background-color: $mainColor;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .companyContactInfo{
+            justify-content: center;
+            .rightPart{
+
+                .checkIcon{
+                    color: $mainColor;
+                }
+                a{
+                    text-decoration: none;
+                    color: #0986FD;
+                }
+            }
+        }
+    }
+
+    .companyWrapper{
+        margin: 25px 0px;
+    }
+
+    .contactForm{
+        padding: 20px;
+        border: 1px solid #ddd;
+        
+
+        .contactFormWrapper{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-transform: capitalize;
+
+            .title{
+                flex: 0 0 100%;
+                text-align: center;
+                
+            }
+
+            .formWrapper{
+                margin: auto;
+                margin-top: 45px;
+                width: 70%;
+                text-align: right;
+
+                form{
+
+                    table{
+                        border-collapse: separate;
+                        border-spacing: 20px;
+                        text-transform: capitalize;
+                        width: 100%;
+
+                        tr{
+                           
+                            td{
+                                vertical-align: top;
+                                color: rgb(151, 151, 151);
+                                font-size: 14px;
+                                input{
+                                    border: none;
+                                    color: $mainColor;
+                                    padding: 8px 10px;
+                                    width: 70%;
+                                }
+
+                                textarea{
+                                    width: 70%;
+                                    height: 100px;
+                                    resize: none;
+                                    // overflow-y: scroll;
+                                    padding: 8px 10px ;
+                                    border: 1px solid #ddd;
+                                    color: $mainColor;
+                                }
+                            }
+
+                            td:nth-child(2){
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                    .formBtn{
+                        text-align: center;
+
+                        button{
+                            width: 20%;
+                            padding: 9px 25px;
+                            border-radius: 25px;
+                            background-color: $mainColor;
+                            color: $mainBackgroundColor;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 16px;
+                            letter-spacing: 1.2px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media (min-width:200px) and (max-width:600px){
+    .contact{
+        padding: 8px 5px;
+        .contactWrapper{
+
+            .contactInfo{
+                padding: 8px;
+                justify-content: center;
+
+                .leftPart{
+                    flex: 0 0 100%;
+                    border: none;
+                    border-bottom: 1px solid #ddd;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+
+                .rightPart{
+                    flex: 0 0 100%;
+                    margin: 0px;
+
+                    table{
+
+                        border-spacing: 10px 13px;
+
+                        tr{
+
+                            td:first-child{
+                                text-align: left;
+                                font-size: 12px;
+                            }
+
+                            td:last-child{
+                                text-align: center;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    .rightBtn{
+                        width: 100%;
+
+                        button{
+                            margin: 8px auto;
+                            padding: 8px 18px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contactForm{
+            padding: 20px 5px;
+
+            .contactFormWrapper{
+
+                .formWrapper{
+                    margin-top: 20px;
+                    width: 95%;
+
+                    form{
+
+                        table{
+
+                            tr{
+
+                                td{
+
+                                    textarea, input{
+
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            tr:first-child{
+                                td{
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                        
+                        .formBtn{
+
+                            button{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:600.8px) and (max-width:800px){
+    .contact .contactWrapper .contactInfo .rightPart .rightBtn{
+        width: 95%;
+        margin-top: 25px;
+    }
+
+    .contact .contactWrapper .contactInfo .rightPart .rightBtn button{
+        margin-right: 15px;
+        padding: 8px 8px;
+        font-size: 12px;
+    }
+
+    .contact .contactForm .contactFormWrapper .formWrapper form table tr td textarea, .contact .contactForm .contactFormWrapper .formWrapper form table tr td input{
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,739 @@
+/*Sass */
+$mainColor : #A01F1F;
+$mainTransition : all .3s ease-in-out;
+
+/*Sass */
+
+.navbar{
+    padding: 4px 20px;
+    .topNav{
+
+        .topNavLinks{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 0;
+            opacity: 1;
+            padding: 3px 0 2px 0;
+            height: 42px;
+            border-bottom: 1px solid #ececec;
+
+            .topNavAd{
+                font-size: 13px;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                span:first-child{
+                    margin-right: 5px;
+                    font-size: 17px;
+                }
+            }
+    
+            .topNavMenu{
+                justify-items: flex-start;
+                margin-left: auto;
+                text-align: right;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    font-size: 13px;
+
+                    li{
+                        margin-left: 25px;
+                        display: flex;
+                        align-items: center;
+                        
+                        span:first-child{
+                            margin-right: 5px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navWrapper{
+
+            .navWrapperContent{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 30px 0px;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #ececec;
+
+                .navLogo{
+                    max-width: 100%;
+                    img{
+                        width: 110px;
+                        height: 30px;
+                    }
+                }
+
+                .navSearch{
+                    width: 60%;
+                    margin: 0px auto;
+                    input{
+                        width: 100%;
+                        padding: 12px 30px;
+                        border-radius: 25px;
+                        border: 1px solid #ececec;
+                        background-color: #F1F1F1;
+                        
+                        &:focus-visible{
+                            outline: none;
+                        }
+                    }
+                }
+
+                .navWrapperIcons{
+
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        
+                        li{
+                            margin: 0px 15px;
+                            font-size: 14px;
+                            text-align: center;
+                            cursor: pointer;
+
+                            div{
+                                font-size: 20px;
+                            }
+
+                            &:hover{
+                                color: $mainColor !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navMainLinksContainer{
+                padding: 5px 0px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                position: relative;
+
+                .navMainLinks{
+
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+
+                        li{
+                            margin-right: 10px;
+                            padding: 5px 8px;
+                            
+
+                            a{
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: #000;
+                                font-size: 16px;
+                                display: flex;
+                                align-items: center;
+                                transition: $mainTransition;
+                                &:hover{
+                                    color: rgb(188, 188, 188) !important;
+                                }
+
+                                .navLinkIcon{
+                                    margin-top: 3px;
+                                    margin-left: 2px;
+                                    color: #8f8f8f95;
+                                }
+                            }
+
+                            .navLinkContentWrapper{
+                                width: 100%;
+                                height: 450px;
+                                overflow-y: scroll;
+                                position: absolute;
+                                top: 45px;
+                                left: 0px;
+                                background-color: #fff;
+                                border: 1px solid #eee;
+                                z-index: -1;
+                                transition: all .5s ease-in-out;
+                                opacity: 0;
+                                padding: 40px 20px;
+
+                                .navHomeLinkContent{
+                                
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    text-transform: capitalize;
+    
+                                    > div {
+                                        flex: 0 0 18%;
+                                        margin-bottom: 20px;
+                                    }
+                                }
+
+                                .navLinkContentBtn{
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-top: 20px;
+    
+                                    button{
+                                        color: #fff;
+                                        padding: 12px;
+                                        width: 250px;
+                                        background-color: $mainColor;
+                                        font-size: 15px;
+                                        font-weight: 100;
+                                        border: none;
+                                        outline: none;
+                                        cursor: pointer;
+                                        transition:  $mainTransition;
+
+                                        &:hover{
+                                            background-color: #d43838;
+                                        }
+                                    }
+                                }
+
+                                .navShopLinkContent{
+                                    align-items: flex-start !important;
+                                    justify-content: flex-start;
+    
+                                    div{
+                                        ul{
+                                            list-style: none;
+                                            display: block;
+        
+                                            li{
+                                                display: block;
+                                                cursor: pointer;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                            }
+        
+                                            li:first-child{
+                                                font-size: 20px;
+                                                font-weight: 600;
+                                                transition: $mainTransition;
+    
+                                                &:hover{
+                                                    color: $mainColor;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .navLinkContentWrapper2{
+                                position: absolute;
+                                top: 45px;
+                                left: 300px;
+                                background-color: #fff;
+                                border: 1px solid #eee;
+                                z-index: -1;
+                                transition: all .5s ease-in-out;
+                                opacity: 0;
+                                padding: 10px 15px;
+
+                                ul{
+                                    list-style: none;
+                                    display: block;
+                                    text-align: left;
+                                    padding: 0px;
+
+                                    li{
+                                        text-transform: capitalize;
+                                        padding: 4px 0px;
+                                        margin-bottom: 10px;
+                                        cursor: pointer;
+                                        transition: $mainTransition;
+
+                                        &:hover{
+                                            color: $mainColor;
+                                            padding-left: 5px;
+                                        }
+                                    }
+                                }
+                            }      
+                            .vendorWrapper{
+                                padding-right: 80px !important;
+                                left: 400px !important;
+                            }
+
+                            .vendorStoreWrapper{
+                                padding-right: 80px !important;
+                                // left: 550px !important;
+                                transform: translateX(240px);
+                            }
+
+                            
+                        }
+
+                        .navHomeLink{
+                            
+                            &:hover{
+                                .navLinkContentWrapper, .navLinkContentWrapper2{
+                                    z-index: 11111;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .navContact{
+                    margin-left: auto;
+
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                        font-size: 16px;
+                        display: flex;
+                        align-items: center;
+
+                        span:first-child{
+                            font-size: 22px;
+                            margin-right: 5px;
+                            margin-top: 4px;
+                            color: #8f8f8ff1;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.sm-screen{
+    position: relative;
+
+    .sideNavOverlay{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100vh;
+        z-index: 2222;
+        background-color: rgba(0,0,0,.3);
+        opacity: 1;
+        transition: all .5s ease-in-out;
+    }
+
+    .sideNavOverlayDis{
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .sideNav{
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 500px;
+        max-width: 80%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 999999999999;
+        padding: 0;
+        transition: all .5s ease-in-out;
+
+        .sideNavIcon{
+            position: absolute;
+            top: 10px;
+            right: -20px;
+            color: #555;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            line-height: 73px;
+            cursor: pointer;
+            svg{
+                font-size: 42px;
+            }
+        }
+
+        .sideNavMenuWrapper{
+            padding: 0;
+            color: #555;
+
+            ul{
+                list-style-position: inside;
+                list-style: none;
+
+                li{
+                    padding: 0px;
+                    border-bottom: 1px solid #eee;
+                    margin-bottom: 10px;
+                    text-transform: capitalize;
+
+                    .sideNavAcc{
+                        box-shadow: none !important;
+                    }
+                }
+
+                li:first-child{
+                    h1{
+                        font-size: 25px;
+                        padding: 10px 15px;
+                    }
+                }
+
+                .loginLi{
+                    padding: 10px 15px;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+
+                
+            }
+        }
+    }
+
+    .activeSideNav{
+        left: 0px !important;
+    }
+
+    .sideCart{
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        width: 400px;
+        max-width: 80%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 999999999999;
+        padding: 0;
+        transition: all .5s ease-in-out;
+
+        .sideCartIcon{
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            color: #555;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            line-height: 73px;
+            cursor: pointer;
+
+            svg{
+                font-size: 42px;
+            }
+        }
+
+        .sideCartWrapper{
+            padding: 20px 30px;
+            text-align: center;
+
+            .cartWrapperTitle{
+                text-align: center;
+                color: #555;
+            }
+
+            .cartBodyIcon{
+                margin-top: 20%;
+                text-align: center;
+                opacity: .4;
+                color: rgba(0,0,0,.3);
+                margin-bottom: 25px;
+
+                span{
+
+                    svg{
+                        font-size: 12rem;
+                    }
+                }
+            }
+
+            .cartNotice{
+                font-size: 25px;
+                color: rgba(0,0,0,.3);
+            }
+
+            .cartCloseBtn{
+                margin-top: 35px;
+                text-align: center;
+
+                button{
+                    width: 70%;
+                    padding: 12px 20px;
+                    border-radius: 25px;
+                    color: #fff;
+                    background-color: #d43838;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .activeSideCard{
+        right: 0px !important;
+    }
+}
+
+.modalNav{
+    top: 0px !important;
+    flex: 0 0 100% !important;
+    height: fit-content !important;
+
+    .modalForm{
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 5px;
+    
+        input{
+            font-size: 16px;
+            border: 1px solid #dedede;
+            color: #333;
+            padding: 0.48276em;
+            height: 2.68966em;
+            border-color: #f5f5f5;
+            background-color: #f5f5f5!important;
+            width: 60%;
+            border-radius: 4px;
+        }
+    
+        button{
+            width: 20%;
+            padding: 0.48276em;
+            height: 3.18966em;
+            color: #fff;
+            background-color: $mainColor;
+            border:none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+    }
+}
+
+.modalLogin{
+    height: 60% !important;
+    align-items: flex-start !important;
+
+    .modalLoginWrapper{
+        width: 70%;
+        margin: auto;
+        height: 100%;
+        background-color: #fff;
+        // display: flex;
+        // flex-wrap: wrap;
+        // align-items: flex-start;
+        justify-content: center;
+        padding: 10px 5px;
+        position: relative;
+
+        .closeIcon{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: $mainColor;
+            font-size: 18px;
+            z-index: 3333;
+            cursor: pointer;
+        }
+
+        .modalLoginTitle{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .form{
+
+            margin-top: 20px;
+
+            h3{
+                margin-bottom: 35px;
+            }
+
+            .formWrapper{
+                padding-bottom: 10px;
+                width: 70%;
+                text-align: left;
+                margin: auto;
+                label{
+                    font-size: 1em;
+                    color: #4d4d4d;
+                    cursor: pointer;
+                    display: block;
+                    font-weight: 500;
+                    margin-bottom: 0.2069em;
+                }
+                input{
+                    margin-bottom: 15px;
+                    background-color: #fff;
+                    border: 1px solid #dedede;
+                    color: #333;
+                    padding: 0.48276em;
+                    height: 2.68966em;
+                    width: 100%;
+                }
+
+                .submitBtn{
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+
+                    button{
+                        padding: 8px;
+                        border: none;
+                        border-radius: 25px;
+                        width: 60%;
+                        color: #fff;
+                        background-color: $mainColor;
+                        font-size: 17px;
+                    }
+                }
+                
+            }
+            
+        }
+
+        
+        
+    }
+}
+
+@media (min-width:200px) and (max-width:400px){
+    .modalLoginWrapper{
+        width: 90% !important;
+    }
+    .submitBtn{
+
+        button{
+            width: 90% !important;
+        }
+    }
+}
+@media (min-width:200px) and (max-width:769.8px){
+    .lg-screen{
+        display: none !important;
+    }
+    .navbar{
+        padding: 4px 8px !important;
+
+        .sm-screen{
+
+            .topNav {
+                .topNavLinks {
+                    justify-content: center !important;
+                    .topNavAd{
+                        flex: 0 0 100%;
+                        justify-content: center;
+                        font-size: 15px;
+                    }
+                    
+                }
+
+                .navWrapper{
+
+                    .navWrapperContent{
+                        color: rgb(132, 132, 132);
+                        
+                        .navLogo{
+
+                            img{
+                                width: 100px;
+                            }
+                        }
+                        .iconWrapper1{
+                            font-size: 20px;
+
+                            span:first-child{
+                                margin-right: 15px;
+                            }
+                        }
+
+                        .iconWrapper2{
+                            font-size: 25px;
+
+                            span:last-child{
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+
+    
+}
+
+@media (min-width:769.8px){
+    .sm-screen{
+        display: none;
+    }
+}
+
+@media (min-width:769.8px) and (max-width:950px){
+    .navbar{
+        padding: 4px 10px;
+        .topNav{
+
+            .navWrapper{
+
+                .navWrapperContent{
+
+                    .navSearch{
+                        width: 45%;
+                    }
+                }
+
+                .navMainLinksContainer{
+
+                    .navMainLinks {
+
+                        ul{
+
+                            li{
+                                padding: 5px 3px;
+                                margin-right: 4px;
+
+                                a{
+                                    font-size: 14px;
+                                }
+
+                                .vendorWrapper{
+                                    left: 365px !important;
+                                }
+                                .navLinkContentWrapper2{
+                                    left: 275px;
+                                }
+
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
