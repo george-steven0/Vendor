@@ -76,7 +76,7 @@ const Navbar = () => {
 
                         <div className='topNavMenu'>
                             <ul>
-                                <li>
+                                <li onClick={showModalLoginHandler}>
                                     <span><UserIcon /></span>
                                     <span>Login / Register</span>
                                 </li>
