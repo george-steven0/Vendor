@@ -139,7 +139,8 @@ const Home = () => {
                                     <div className="cardNavLinks">
                                         <ul>
                                             <li onClick={openHomeHandler}>
-                                                <BsCardImage />
+                                                {/* <BsCardImage /> */}
+                                                <span>Home</span>
                                             </li>
                                             <li onClick={openCompanyHandler}>
                                                 <span>company profile</span>
