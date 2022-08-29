@@ -1,0 +1,205 @@
+/* Sass */
+$mainColor : #A01F1F;
+$mainTransition : all .3s ease-in-out;
+$mainBackgroundColor : #F8F8F8;
+/* Sass */
+
+.footerWrapper{
+    margin-top: 40px;
+    background-color: $mainColor;
+    border: 1px solid #eee;
+    color: $mainBackgroundColor;
+
+    .footerContent{
+        padding-top: 80px;
+        padding-bottom: 40px;
+
+        .footerContentWrapper{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .ft1{
+
+                > ul{
+                    list-style: none;
+
+                    li:first-child{
+                        margin-bottom: 30px;
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: $mainBackgroundColor;
+                    }
+
+                    li{
+                        margin-bottom: 15px;
+                        font-size: 14px;
+                        text-transform: capitalize;
+                        color: $mainBackgroundColor;
+                    }
+                }
+
+                .footerSocialLinks {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li{
+                        font-size: 16px !important;
+                        margin-right: 15px;
+                        margin-bottom: 0px !important;
+                    }
+                }
+
+                .newsLetterController{
+
+                    input{
+                        padding: 8.8px 12px 8px 12px;
+                        border: none;
+                    }
+
+                    button{
+                        padding: 7px 12px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: transparent;
+                        border: 1px solid $mainBackgroundColor;
+                        border-left: none;
+                        color:  $mainBackgroundColor;
+                        letter-spacing: 1.7px;
+                        font-size: 14px;
+                        margin-top: -4px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.footerCopyRightsWrapper{
+    padding: 10px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyRights{
+        font-size: 13px;
+    }
+
+    .copyRightLinks{
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            list-style: none;
+            font-size: 14px;
+
+            li{
+                margin-left: 15px;
+                text-transform: capitalize;
+                font-weight: 400;
+                cursor: pointer;
+                color: #555;
+                transition: $mainTransition;
+
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:200px) and (max-width:769px){
+
+    .footerWrapper{
+        
+        .footerContent{
+            padding-top: 60px;
+
+            .footerContentWrapper{
+                width: 93%;
+                justify-content: flex-start;
+
+                .ft1{
+                    flex: 0 0 100%;
+                    margin-bottom: 45px;
+
+                    .newsLetterController{
+
+                        input{
+                            padding: 8.8px 9px;
+                        }
+
+                        button{
+                            padding: 7px 9px;
+                            letter-spacing: 1.3px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .footerCopyRightsWrapper{
+        justify-content: center;
+
+        .copyRights{
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        .copyRightLinks{
+
+            ul{
+                justify-content: center;
+
+                li:first-child, li:nth-child(2){
+
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:769.8px) and (max-width:1050px){
+
+    .footerWrapper{
+        
+        .footerContent{
+            padding-top: 60px;
+
+            .footerContentWrapper{
+                width: 93%;
+                justify-content: flex-start;
+
+                .ft1{
+                    flex: 0 0 50%;
+                    margin-bottom: 25px;
+
+                    // .newsLetterController{
+
+                    //     input{
+                    //         padding: 8.8px 9px;
+                    //     }
+
+                    //     button{
+                    //         padding: 7px 9px;
+                    //         letter-spacing: 1.3px;
+                    //     }
+
+                    // }
+                }
+            }
+        }
+    }
+}

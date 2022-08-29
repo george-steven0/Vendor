@@ -131,7 +131,7 @@ $mainBackgroundColor : #F8F8F8;
         }
 
         .homeMainContent{
-            width: 90%;
+            width: 92%;
             margin: 45px auto 20px auto;
             display: flex;
             flex-wrap: wrap;
@@ -170,10 +170,14 @@ $mainBackgroundColor : #F8F8F8;
                         }
                     }
                 }
+
+                .accordion:last-child{
+                    margin-bottom: 0px;
+                }
             }
 
             .mainContentRight{
-                flex: 0 0 70%;
+                flex: 0 0 78%;
                 
 
                 .homeCardsContainer{
@@ -183,9 +187,11 @@ $mainBackgroundColor : #F8F8F8;
                         flex-wrap: wrap;
                         justify-content: space-between;
                         align-items: center;
-                        background-color: $mainBackgroundColor;
-                        padding: 15px;
+                        background-color: $mainColor;
+                        padding: 15px 20px;
                         box-shadow: 0px 0px 5px 2px rgba(167, 167, 167, 0.223);
+                        border-radius: 6px;
+                        
 
                         .cardNavLinks{
                             ul{
@@ -200,12 +206,13 @@ $mainBackgroundColor : #F8F8F8;
                                     cursor: pointer;
                                     font-size: 16px;
                                     font-weight: 500;
+                                    color: #fff;
 
                                     span, svg{
                                         transition: $mainTransition;
-                                        &:hover{
-                                            color: $mainColor;
-                                        }
+                                        // &:hover{
+                                        //     color: $mainColor;
+                                        // }
                                     }
 
                                     svg{
@@ -234,13 +241,24 @@ $mainBackgroundColor : #F8F8F8;
                                         height: 40px;
                                         border: solid 1px #eee;
                                         background-color: #fff;
+                                        border-top-left-radius: 6px ;
+                                        border-bottom-left-radius:6px ;
                                     }
 
                                     button{
-                                        padding: 11.5px 12px;
+                                        padding: 11.8px 12px 11.6px 12px;
                                         border: none;
-                                        color: #fff;
-                                        background-color: $mainColor;
+                                        color: $mainColor;
+                                        background-color: #fff;
+                                        border: 1px solid $mainColor;
+                                        cursor: pointer;
+                                        transition: $mainTransition;
+
+                                        &:hover{
+                                            background-color: $mainColor;
+                                            color: #fff;
+                                            border: 1px solid #fff;
+                                        }
                                     }
 
                                 }
@@ -250,6 +268,7 @@ $mainBackgroundColor : #F8F8F8;
                                     padding: 11px 30px 11px 8px;  
                                     border: solid 1px #eee;
                                     background-color: #fff;
+                                    border-radius: 6px;
                                 }
                             }
                         }
@@ -257,7 +276,7 @@ $mainBackgroundColor : #F8F8F8;
 
                     .cardContainer{
                         margin-top: 30px;
-                        width: 100%;
+                        width: 94%;
                         display: grid;
                         grid-template-columns: 25% 25% 25% 25%;
                         grid-template-rows: auto auto auto;
@@ -297,114 +316,6 @@ $mainBackgroundColor : #F8F8F8;
             .ContentNav{
                 flex: 0 0 100%;
                 margin-left: auto;
-            }
-        }
-    }
-
-    .footerWrapper{
-        margin-top: 40px;
-        background-color: $mainBackgroundColor;
-        border: 1px solid #eee;
-        color: #555;
-
-        .footerContent{
-            padding-top: 80px;
-            padding-bottom: 40px;
-
-            .footerContentWrapper{
-                width: 90%;
-                margin: auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: flex-start;
-
-                .ft1{
-
-                    > ul{
-                        list-style: none;
-    
-                        li:first-child{
-                            margin-bottom: 30px;
-                            font-size: 22px;
-                            font-weight: bold;
-                            color: #000;
-                        }
-    
-                        li{
-                            margin-bottom: 15px;
-                            font-size: 14px;
-                            text-transform: capitalize;
-                        }
-                    }
-
-                    .footerSocialLinks {
-                        list-style: none;
-                        display: flex;
-                        flex-wrap: wrap;
-
-                        li{
-                            font-size: 16px !important;
-                            margin-right: 15px;
-                            margin-bottom: 0px !important;
-                        }
-                    }
-
-                    .newsLetterController{
-
-                        input{
-                            padding: 8.8px 12px 8px 12px;
-                            border: none;
-                        }
-
-                        button{
-                            padding: 8px 12px;
-                            border: none;
-                            cursor: pointer;
-                            background-color: $mainColor;
-                            color:  $mainBackgroundColor;
-                            letter-spacing: 1.7px;
-                            font-size: 14px;
-                        }
-                    }
-                }
-                
-            }
-        }
-    }
-
-    .footerCopyRightsWrapper{
-        padding: 10px 25px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-
-        .copyRights{
-            font-size: 13px;
-        }
-
-        .copyRightLinks{
-
-            ul{
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                list-style: none;
-                font-size: 14px;
-
-                li{
-                    margin-left: 15px;
-                    text-transform: capitalize;
-                    font-weight: 400;
-                    cursor: pointer;
-                    color: #555;
-                    transition: $mainTransition;
-
-                    &:hover{
-                        color: $mainColor;
-                    }
-                }
             }
         }
     }
@@ -525,57 +436,6 @@ $mainBackgroundColor : #F8F8F8;
 
             
         }
-
-        .footerWrapper{
-            
-            .footerContent{
-                padding-top: 60px;
-
-                .footerContentWrapper{
-                    width: 93%;
-                    justify-content: flex-start;
-
-                    .ft1{
-                        flex: 0 0 100%;
-                        margin-bottom: 45px;
-
-                        .newsLetterController{
-
-                            input{
-                                padding: 8.8px 9px;
-                            }
-
-                            button{
-                                padding: 7px 9px;
-                                letter-spacing: 1.3px;
-                            }
-
-                        }
-                    }
-                }
-            }
-        }
-
-        .footerCopyRightsWrapper{
-            justify-content: center;
-
-            .copyRights{
-                margin-bottom: 15px;
-                font-size: 15px;
-            }
-
-            .copyRightLinks{
-
-                ul{
-                    justify-content: center;
-
-                    li:first-child, li:nth-child(2){
-
-                        margin-bottom: 10px;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -641,6 +501,7 @@ $mainBackgroundColor : #F8F8F8;
                         .cardContainer{
                             grid-template-columns: 50% 50%;
                             gap: 10px;
+                            width: 98%;
                         }
                     }
                 }
@@ -649,57 +510,6 @@ $mainBackgroundColor : #F8F8F8;
 
             
         }
-
-        .footerWrapper{
-            
-            .footerContent{
-                padding-top: 60px;
-
-                .footerContentWrapper{
-                    width: 93%;
-                    justify-content: flex-start;
-
-                    .ft1{
-                        flex: 0 0 50%;
-                        margin-bottom: 25px;
-
-                        // .newsLetterController{
-
-                        //     input{
-                        //         padding: 8.8px 9px;
-                        //     }
-
-                        //     button{
-                        //         padding: 7px 9px;
-                        //         letter-spacing: 1.3px;
-                        //     }
-
-                        // }
-                    }
-                }
-            }
-        }
-
-        // .footerCopyRightsWrapper{
-        //     justify-content: center;
-
-        //     .copyRights{
-        //         margin-bottom: 15px;
-        //         font-size: 15px;
-        //     }
-
-        //     .copyRightLinks{
-
-        //         ul{
-        //             justify-content: center;
-
-        //             li:first-child, li:nth-child(2){
-
-        //                 margin-bottom: 10px;
-        //             }
-        //         }
-        //     }
-        // }
     }
 }
 
@@ -739,7 +549,8 @@ $mainBackgroundColor : #F8F8F8;
                             }
                         }
                         .cardContainer{
-                            grid-template-columns: 32% 32% 32%;
+                            width: 97%;
+                            grid-template-columns: 33.333% 33.333% 33.333%;
                             gap: 10px;
                         }
                     }
