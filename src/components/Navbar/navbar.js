@@ -113,7 +113,7 @@ const Navbar = () => {
                             <div className="navWrapperIcons">
                                 <ul>
                                     <li>
-                                        <div>
+                                        <div onClick={showCartHandler}>
                                             <Cart />
                                         </div>
                                         Cart

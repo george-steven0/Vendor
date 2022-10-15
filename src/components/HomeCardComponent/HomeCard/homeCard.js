@@ -38,11 +38,11 @@ const HomeCard = (props) => {
 
                     </CardActionArea>
 
-                    {/* <CardActions>
+                    <CardActions>
                         <Button size="small" color="primary">
                             Share
                         </Button>
-                    </CardActions> */}
+                    </CardActions>
                 </Card>
             </div>
         </>

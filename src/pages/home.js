@@ -74,9 +74,9 @@ const Home = () => {
                     <span onClick={scrollToTop}><FaArrowUp /></span>
                 </div> : null}
 
-                {/* <section className="navbar">
+                <section className="navbar">
                     <Navbar />
-                </section> */}
+                </section>
 
                 <section className="homeContent">
                     <div className="topHeaderWrapper">
@@ -186,12 +186,9 @@ const Home = () => {
                     {openHome ? <HomeCardComponent /> : opencompany ? <CompanyProfileComponent /> : openContact ? <ContactComponent /> : null}
                 </section>
 
-
-
-
-                {/* <div>
+                <div>
                     <Footer />
-                </div> */}
+                </div>
 
 
             </article>

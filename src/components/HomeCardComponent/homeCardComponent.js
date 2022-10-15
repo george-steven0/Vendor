@@ -29,9 +29,9 @@ const HomeCardComponent = () => {
     const homeCardData = [
         {id:1, price : "18", img:bannerLogo, description : "analog clock", title: 'clock',},
         {id:2, price : "18", img:banner, description : "analog clock", title: 'clock',},
-        {id:2, price : "18", img:regSlide, description : "analog clock", title: 'clock',},
-        {id:2, price : "18", img:bannerLogo, description : "analog clock", title: 'clock',},
-        {id:3, price : "18", img:banner, description : "analog clock", title: 'clock',}
+        {id:3, price : "18", img:regSlide, description : "analog clock", title: 'clock',},
+        {id:4, price : "18", img:bannerLogo, description : "analog clock", title: 'clock',},
+        {id:5, price : "18", img:banner, description : "analog clock", title: 'clock',}
     ]
 
     const homeCardList = homeCardData.map(item=>{
